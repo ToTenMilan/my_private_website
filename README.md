@@ -1,24 +1,77 @@
+# Planning the App.
+    
+    1. Questions
+        
+        - what do we build
+        
+        - for who we build it
+        
+        - what features should it have
+        
+    2. User stories
+    
+    3. Modeling our data
+    
+    4. What pages we need in our app
+    
+## Questions
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+    1. Private page to blog about what I learned, put examples of code I wrote, and make a possibility to contact with the me (the author).
+    
+    2. I build it for myself, for the community and for potential employers in the future
+    
+    3. Features of the app
+    
+        - Posts:
+            Create/Edit/Destroy
+            markdown
+            syntax highlight
+            comments
+        
+        - Projects:
+            Create/edit/destroy
+            
+        - Contact:
+            Contact form
+            sendgrid
+            
+        - User (Devise)
+    
+## User stories
 
+    1. As a User I want to create posts and share them
+    
+    2. As a user I want to edit and destroy posts to menage the app
+    
+    3. As a user I want to write posts in a markdown to make it simplier
+    
+    4. As a user I want to have a possibility to mark code in posts to distinguish it from simple text
+    
+    5. As a user I want to share my projects with visitors
+    
+    6. As a user I want to allow visitors to contact me through contact form
+    
+    7. As a user I want to allow visitors to comment my posts
+    
+## Modeling data
 
-Welcome to your Rails project on Cloud9 IDE!
+    Post
+        title:string
+        content:text
+        
+    Project
+        title:string
+        description:text
+        link:string
+        
+    User
+        gem devise
+        
+## What pages do we need in our app
 
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://blograils-gmilan.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+    Home
+    Posts#index
+    Posts#show
+    Projects#index
+    Projects#show
+    Contact
