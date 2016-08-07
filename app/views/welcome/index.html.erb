@@ -1,0 +1,32 @@
+<div class="wrapper wrapper_padding clearfix">
+            <div class="col-1 about homepage_content">
+                <h2>About</h2>
+                <hr>
+                <p>Here will be text about the author.</p>
+                <p>Currently the work is in progress.</p>
+                <p>Check the site in future.</p>
+            </div>
+            <div class="col-2 homepage_content">
+                <h2>What I learned</h2>
+                <hr>
+                <% @posts.each do |post| %>
+                    <h3><a href="#"><%= link_to post.title, post %></a></h3>
+                    <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+                <% end %>
+                
+                <!--<h3><a href="#">railstutorial.org</a></h3>-->
+                <!--<p class="date">4th august 2016</p>-->
+                <!--<h3><a href="#">Well grounded Rubyist</a></h3>-->
+                <!--<p class="date">4th august 2016</p>-->
+            </div>
+            <div class="col-3 homepage_content">
+                <h2>What I learned</h2>
+                <hr>
+                <h3><a href="#">EDX's CS50</a></h3>
+                <p class="date">4th august 2016</p>
+                <h3><a href="#">railstutorial.org</a></h3>
+                <p class="date">4th august 2016</p>
+                <h3><a href="#">Well grounded Rubyist</a></h3>
+                <p class="date">4th august 2016</p>
+            </div>
+        </div>
