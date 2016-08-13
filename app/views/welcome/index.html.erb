@@ -1,13 +1,13 @@
 <div class="wrapper wrapper_padding clearfix">
             <div class="col-1 about homepage_content">
-                <h2>About</h2>
+                <h2>A not-yet developer site</h2>
                 <hr>
-                <p>Here will be text about the author.</p>
-                <p>Currently the work is in progress.</p>
-                <p>Check the site in future.</p>
+                <p>I am focusing on Ruby and Rails.</p>
+                <p>You will find here my solutions</p>
+                <p>And my projects</p>
             </div>
             <div class="col-2 homepage_content">
-                <h2>What I learned</h2>
+                <h2>What I am doing</h2>
                 <hr>
                 <% @posts.each do |post| %>
                     <h3><a href="#"><%= link_to post.title, post %></a></h3>
@@ -20,7 +20,7 @@
                 <!--<p class="date">4th august 2016</p>-->
             </div>
             <div class="col-3 homepage_content">
-                <h2>What I learned</h2>
+                <h2>What I have done</h2>
                 <hr>
                 <% @projects.each do |project| %>
                     <h3><a href="#"><%= link_to project.title, project %></a></h3>
