@@ -1,5 +1,3 @@
-Website is available at www.grzegorzmilanowski.com
-
 # Planning the App.
     
     1. Questions
